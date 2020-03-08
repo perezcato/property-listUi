@@ -98,7 +98,7 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
             <li className="moreOption">
               <Link to="/search?type=rent">{getTranslation(this.props.lang, 'Rent')}</Link>
             </li>
-            <li className="moreOption">
+            {/* <li className="moreOption">
               <Link to="/agent/search">{getTranslation(this.props.lang, 'Renovation')}</Link>
             </li>
             <li className="moreOption">
@@ -109,7 +109,7 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
             </li>
             <li className="moreOption">
               <Link to="/agent/search">{getTranslation(this.props.lang, 'Find agent')}</Link>
-            </li>
+            </li> */}
             {this.loginField()}
             <li>
               <Link to="/newproperty/sell"><div className="btn btn-green">

@@ -2,6 +2,7 @@
   "name": "reacttypescriptinit",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://gerhardtdatsomor.github.io/property-listUi",
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/google-map-react": "^0.23.0",
@@ -30,8 +31,9 @@
   },
   "devDependencies": {
     "@types/redux-logger": "^3.0.4",
-    "redux-logger": "^3.0.6",
-    "react-scripts-ts": "2.8.0"
+    "gh-pages": "^2.2.0",
+    "react-scripts-ts": "2.8.0",
+    "redux-logger": "^3.0.6"
   },
   "scripts": {
     "dev": "react-scripts-ts start",
@@ -39,6 +41,8 @@
     "start": "cp src/index.main.tsx src/index.tsx && react-scripts-ts start",
     "build": "cp src/index.main.tsx src/index.tsx && react-scripts-ts build",
     "start-admin": "cp src/index.admin.tsx src/index.tsx && react-scripts-ts start",
-    "build-admin": "cp src/index.admin.tsx src/index.tsx && react-scripts-ts build"
+    "build-admin": "cp src/index.admin.tsx src/index.tsx && react-scripts-ts build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   }
 }
